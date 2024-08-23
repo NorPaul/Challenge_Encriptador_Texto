@@ -15,12 +15,36 @@
 
     <main class="presentacion">
         <section class="presentacion_Contenido">
-            <p>Ingrese el texto aquí</p>
+            <div class="presentacion_Contenido_Entrada">
+                <textarea 
+                    class="texto" 
+                    name="texto" 
+                    id="texto" 
+                    cols="30" 
+                    rows="10" 
+                    placeholder="Ingresa el texto aquí">
+                </textarea>
+
+                <p class="terminos"> Solo letras minúsculas y sin acentos</p>
+
+                <div class="botones">
+                    <button class="boton_Encriptar" type="button" onclick="encriptar();">
+                        Encriptar
+                    </button>
+
+                    <button class="boton_Desencriptar" type="button" onclick="desencriptar();">
+                        Desencriptar
+                    </button>
+                </div>
+            </div>
+
+            <div class="presentacion_Contenido_Salida">
+                <img class="presentacion_Contenido_Salida_Imagen" src="Assets/Muñeco.png" alt="Imagen de una persona buscando con una lupa">
+                <h2 class="presentacion_Contenido_Salida_Titulo">Ningún mensaje fue encontrado</h2>
+                <p class="presentacion_Contenido_Salida_Texto">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
         </section>
     </main>
-
-    <footer>
-
-    </footer>
 </body>
+<script src="index.js"></script>
 </html>
