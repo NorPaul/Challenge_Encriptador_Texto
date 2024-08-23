@@ -34,7 +34,13 @@ body{
 .presentacion{
     display: flex;
     align-items: center;
-    padding: 0% 0% 0% 12%;
+    padding: 5% 0% 0% 12%;
+}
+
+.presentacion_Contenido{
+    width: 50%;
+    gap: 240px;
+    flex-flow: row wrap;
 }
 
 @media (max-width: 1200px){
