@@ -208,7 +208,9 @@ body{
 }
 
 /*Responsive design*/
-@media (max-width: 57.5cm){
+
+/*Diseño para tablets*/
+@media (max-width: 1024px){
     .presentacion_Contenido{
         display: flex;
         flex-direction: row;
@@ -237,13 +239,16 @@ body{
 
     .presentacion_Contenido_Entrada_Botones{
         width: 80%;
+        height: 20%;
         left: 10%;
         top: 70%;
+        gap: 20px;
     }
 
     .boton_Encriptar,
     .boton_Desencriptar{
         width: 48%;
+        height: 25%;
         border-radius: 16px;
     }
 
@@ -259,6 +264,76 @@ body{
         height: 10%;
         left: 5%;
         top: 80%;
+    }
+
+    .presentacion_Contenido_Salida img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+    .mensaje_Encriptado{
+        width: 100%;
+        top: 5%;
+    }
+}
+
+/*Diseño para celular*/
+@media (max-width: 600px){
+    .presentacion_Contenido{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .presentacion_Contenido_Entrada{
+        width: 100%;
+    }
+
+    .presentacion_Contenido_Entrada_Texto{
+        width: 85%;
+        height: 40%;
+        left: 2%;
+        top: 5%;
+    }
+    .presentacion_Contenido_Entrada_Terminos{
+        width: 85%;
+        left: 0%;
+        top: 50%;
+    }
+
+    .presentacion_Contenido_Entrada_Terminos p{
+        font-size: 12px;
+    }
+
+    .presentacion_Contenido_Entrada_Botones{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 20%;
+        left: 5%;
+        top: 55%;
+        gap: 20px;
+    }
+
+    .boton_Encriptar,
+    .boton_Desencriptar{
+        width: 90%;
+        height: 30%;
+        bottom: 5%;
+    }
+
+    .boton_Encriptar:hover,
+    .boton_Desencriptar:hover{
+        margin: 0.3%;
+        width: 88%;
+        padding: 1.8%;
+    }
+
+    .presentacion_Contenido_Salida{
+        width: 90%;
+        height: 18%;
+        left: 0%;
+        top: 78%;
     }
 
     .presentacion_Contenido_Salida img{
