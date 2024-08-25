@@ -31,3 +31,13 @@ function encriptar(){
         alert("Debes ingresar algún texto");
     }
 }
+
+function copiar(){
+    const texto = document.getElementById("mensaje");
+
+    texto.select();
+    texto.setSelectionRange(0,99999);
+
+    document.execCommand("copy");
+    alert("Texto copiado");
+}
