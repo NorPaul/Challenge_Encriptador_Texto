@@ -3,7 +3,9 @@ function encriptar(){
     let titulo_Mensaje = document.getElementById("titulo_Mensaje");
     let parrafo = document.getElementById("parrafo");
     let imagen = document.getElementById("muneco");
-    let mensaje_Encriptado_Div = document.getElementById("mensaje_Encriptado")
+    let mensaje_Encriptado_Div = document.getElementById("mensaje_Encriptado");
+    let mensaje = document.getElementById("mensaje");
+    let boton_Copiar = document.getElementById("boton_Copiar");
 
     let texto_Cifrado = texto
                         .replace(/e/gi, "enter")
@@ -14,16 +16,15 @@ function encriptar(){
 
     if(texto.length != 0){
         texto = texto_Cifrado;
-        parrafo.textContent = texto_Cifrado;
+        mensaje.value = texto_Cifrado;
 
         imagen.style.display = "none";
         titulo_Mensaje.style.display = "none";
+        parrafo.style.display = "none";
+        mensaje_Encriptado_Div.style.display = "none";
 
-        mensaje_Encriptado_Div.style.justifyContent = "flex-star";
-        mensaje_Encriptado_Div.style.marginTop = "0";
-        parrafo.style.marginTop = "20px";
-        mensaje_Encriptado_Div.style.top = "0";
-        mensaje_Encriptado_Div.style.textAlign = "justify"
+        mensaje.style.display = "block";
+        boton_Copiar.style.display = "block";
 
 
     } else{

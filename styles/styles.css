@@ -122,7 +122,7 @@ body{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--color-Terciario);
 }
 
 .boton_Desencriptar{
@@ -157,10 +157,10 @@ body{
     justify-content: center;
     position: absolute;
     width: 30%;
-    height: 90%;
+    height: 102%;
     left: 60%;
-    top: 5%;
-    background: #FFFFFF;
+    top: -10%;
+    background: var(--color-Terciario);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0, 0.08);
     border-radius: 32px;
 }
@@ -207,10 +207,57 @@ body{
     color: #495057;
 }
 
+.presentacion_Contenido_Salida_Mensaje{
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 75%;
+    top: 3%;
+    border: none;
+    resize: none;
+    font-family: var(--fuente_Inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.presentacion_Contenido_Salida_Mensaje:focus,
+.presentacion_Contenido_Salida_Mensaje:active{
+    border: none;
+    outline: none;
+}
+
+.boton_Copiar{
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    display: none;
+    width: 90%;
+    height: 9%;
+    margin-top: 163%;
+    padding: 3%;
+    border: 1px solid;
+    border-radius: 24px;
+    border-color: var(--color-Secundario);
+    font-family: var(--fuente_Inter);
+    color: var(--color-Secundario);
+    background-color: var(--color-Terciario);
+
+}
+
+.boton_Copiar:hover{
+    width: 89.5%;
+    padding: 7%;
+}
+
+
+
 /*Responsive design*/
 
 /*Diseño para tablets*/
-@media (max-width: 1024px){
+@media (max-width: 1200px){
     .presentacion_Contenido{
         display: flex;
         flex-direction: row;
@@ -218,18 +265,19 @@ body{
 
     .presentacion_Contenido_Entrada{
         width: 100%;
+        height: 60%;
     }
 
     .presentacion_Contenido_Entrada_Texto{
-        width: 80%;
+        width: 90%;
         height: 60%;
-        left: 10%;
+        left: 5%;
         top: 5%;
     }
 
     .presentacion_Contenido_Entrada_Terminos{
-        width: 80%;
-        left: 10%;
+        width: 90%;
+        left: 5%;
         top: 67%;
     }
 
@@ -238,9 +286,9 @@ body{
     }
 
     .presentacion_Contenido_Entrada_Botones{
-        width: 80%;
+        width: 90%;
         height: 20%;
-        left: 10%;
+        left: 5%;
         top: 70%;
         gap: 20px;
     }
@@ -260,8 +308,8 @@ body{
     }
 
     .presentacion_Contenido_Salida{
-        width: 80%;
-        height: 12%;
+        width: 90%;
+        height: 10%;
         left: 5%;
         top: 80%;
     }
@@ -275,6 +323,14 @@ body{
     .mensaje_Encriptado{
         width: 100%;
         top: 5%;
+    }
+
+    .presentacion_Contenido_Salida_Mensaje{
+        height: 60%;
+    }
+
+    .boton_Copiar{
+        top: 0px;
     }
 }
 
@@ -343,7 +399,7 @@ body{
     }
 
     .mensaje_Encriptado{
-        width: 100%;
+        width: 90%;
         top: 5%;
     }
 }
